@@ -1045,10 +1045,7 @@
                             </label>
                         </div>
                         
-                        <div style="display:flex;gap:0.5rem;">
-                            <button class="btn btn-a" onclick="generatePosicional()" style="flex:1;">📍 Gerar por Estatística Posicional</button>
-                            <button class="btn btn-s" onclick="clearPosGen()" title="Limpar jogos posicionais">🗑️</button>
-                        </div>
+                        <button class="btn btn-a" onclick="generatePosicional()" style="width:100%;">📍 Gerar por Estatística Posicional</button>
                         
                         <!-- Resultados -->
                         <div id="posGenInfo" style="margin-top:1rem;"></div>
@@ -1057,20 +1054,19 @@
                             <button class="btn btn-p" onclick="saveAllPosGen()">💾 Salvar Todos</button>
                             <button class="btn btn-w" onclick="exportPosGenExcel()">📊 Excel</button>
                             <button class="btn btn-a" onclick="exportPosGenTxt()">📄 TXT</button>
+                            <button class="btn btn-s" onclick="clearPosGen()">🗑️ Limpar</button>
                         </div>
                     </div>
                 </div>
                 <div>
                     <div class="card">
-                        <div class="card-title" style="display:flex;justify-content:space-between;align-items:center;">
-                            <span>Jogos Gerados</span>
-                            <button class="btn btn-s" onclick="clearGen()" style="padding:0.3rem 0.6rem;font-size:0.75rem;" title="Limpar todos os jogos gerados">🗑️ Limpar</button>
-                        </div>
+                        <div class="card-title">Jogos Gerados</div>
                         <div id="genList"><div class="empty"><div class="empty-i">🎲</div><p>Nenhum jogo</p></div></div>
                         <div class="btns hidden" id="genBtns">
                             <button class="btn btn-p" onclick="saveAllGen()">💾 Salvar Todos</button>
                             <button class="btn btn-w" onclick="exportGenExcel()">📊 Excel</button>
                             <button class="btn btn-a" onclick="exportGenTxt()">📄 TXT</button>
+                            <button class="btn btn-s" onclick="clearGen()">🗑️ Limpar</button>
                         </div>
                     </div>
                 </div>
@@ -1397,10 +1393,7 @@
                             <option value="20">Sim - Base 20 dezenas</option>
                         </select>
                     </div>
-                    <div style="display:flex;gap:0.5rem;margin-top:auto;">
-                        <button class="btn btn-p" onclick="gerarMesclagem()" style="flex:1;">🎯 Gerar Jogos</button>
-                        <button class="btn btn-s" onclick="limparMesclagem()" title="Limpar jogos gerados">🗑️</button>
-                    </div>
+                    <button class="btn btn-p" onclick="gerarMesclagem()" style="margin-top:auto;">🎯 Gerar Jogos</button>
                 </div>
                 
                 <!-- Diagnóstico -->
@@ -1427,7 +1420,7 @@
                                 <option value="0">Todas</option>
                                 <option value="16">16 dezenas</option>
                                 <option value="17">17 dezenas</option>
-                                <option value="18">18 dez    </option>
+                                <option value="18">18 dezenas</option>
                                 <option value="19">19 dezenas</option>
                                 <option value="20">20 dezenas</option>
                                 <option value="21">21 dezenas</option>
@@ -1486,10 +1479,7 @@
                 </div>
             </div>
             <div class="card hidden" id="desdRes">
-                <div class="card-title" style="display:flex;justify-content:space-between;align-items:center;">
-                    <span>Jogos Gerados</span>
-                    <button class="btn btn-s" onclick="limparDesdRes()" style="padding:0.3rem 0.6rem;font-size:0.75rem;" title="Limpar jogos gerados">🗑️ Limpar</button>
-                </div>
+                <div class="card-title">Jogos Gerados</div>
                 <div id="desdResumo"></div>
                 <div id="desdGames"></div>
                 <div class="btns">
@@ -1511,7 +1501,7 @@
                         <!-- Alerta de Jogos Repetidos -->
                         <div class="alert-repetidos hidden" id="alertRepetidos"></div>
                         
-                        <div class="grid2" style="margin-bottom:1rem;">
+                        <div clos</"grid2" style="margin-bottom:1rem;">
                             <div class="fgroup"><label class="flabel">Conferir com</label><select class="fsel" id="confSel"><option value="ultimo">Último Resultado</option></select></div>
                             <div style="display:flex;align-items:flex-end;gap:6px;">
                                 <button class="btn btn-p" onclick="checkGames()">🔍 Conferir</button>
@@ -1551,7 +1541,7 @@
                             <div class="stats-panel-icon">🎰</div>
                             <div class="stats-panel-info">
                                 <div class="stats-panel-value" id="statsTotalJogos">0</div>
-                                <div class="stats-panel-label">Total de Jogos</div>
+                                <div class="stats-panel-label">Total  </Jogos</div>
                             </div>
                         </div>
                         
@@ -1742,10 +1732,7 @@
             
             <!-- Resultado do fechamento inteligente -->
             <div class="card hidden" id="smartResultado">
-                <div class="card-title" style="display:flex;justify-content:space-between;align-items:center;">
-                    <span>🎯 Jogos Gerados (Fechamento Inteligente)</span>
-                    <button class="btn btn-s" onclick="limparSmartResultado()" style="padding:0.3rem 0.6rem;font-size:0.75rem;" title="Limpar jogos gerados">🗑️ Limpar</button>
-                </div>
+                <div class="card-title">🎯 Jogos Gerados (Fechamento Inteligente)</div>
                 <div id="smartResumo"></div>
                 <div id="smartJogos"></div>
                 <div class="btns">
@@ -1830,10 +1817,7 @@
             
             <!-- Resultado do fechamento -->
             <div class="card hidden" id="fechResultado">
-                <div class="card-title" style="display:flex;justify-content:space-between;align-items:center;">
-                    <span>🎯 Jogos Gerados</span>
-                    <button class="btn btn-s" onclick="limparFechResultado()" style="padding:0.3rem 0.6rem;font-size:0.75rem;" title="Limpar jogos gerados">🗑️ Limpar</button>
-                </div>
+                <div class="card-title">🎯 Jogos Gerados</div>
                 <div id="fechResumo"></div>
                 <div id="fechJogos"></div>
                 <div class="btns">
@@ -2338,7 +2322,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function setupNav() {
-    document.querySelectorAll('#nav button')cumeEach(function(btn) {
+    document.querySelectorAll('#nav button').forEach(function(btn) {
         btn.addEventListener('click', function() {
             var sec = this.getAttribute('data-sec');
             document.querySelectorAll('#nav button').forEach(function(b) { b.classList.remove('active'); });
@@ -2986,7 +2970,7 @@ function atualizarAnaliseRetorno(u, s, k) {
     
     html += '<div class="prob-info-card">';
     html += '<div class="prob-info-card-value" style="color:' + (roi >= 0 ? '#22c55e' : '#ef4444') + ';">' + roi.toFixed(2).replace('.', ',') + '%</div>';
-    html += '<div class="pr '#fnfo-card-label">ROI (Retorno sobre Investimento)</div>';
+    html += '<div class="prob-info-card-label">ROI (Retorno sobre Investimento)</div>';
     html += '</div>';
     
     document.getElementById('probAnaliseRetorno').innerHTML = html;
@@ -4195,7 +4179,7 @@ function mostrarDiagnosticoMesclagem(diag, tentativas) {
     
     html += '</ul></div>';
     
-    html += '</div>';
+    ht= 7;= '</div>';
     
     document.getElementById('mesclaDiagnostico').innerHTML = html;
 }
@@ -4568,35 +4552,7 @@ function saveAllGen() {
     toast(DATA.gen.length + ' salvos!');
 }
 
-function clearGen() { DATA.gen = []; showGen(); toast('🗑️ Jogos gerados limpos!'); }
-
-// Funções de limpar das outras seções
-function limparMesclagem() {
-    document.getElementById('mesclaResultado').innerHTML = '';
-    document.getElementById('mesclaDiagnostico').innerHTML = '';
-    toast('🗑️ Jogos da mesclagem limpos!');
-}
-
-function limparDesdRes() {
-    document.getElementById('desdRes').classList.add('hidden');
-    document.getElementById('desdGames').innerHTML = '';
-    document.getElementById('desdResumo').innerHTML = '';
-    toast('🗑️ Jogos do desdobramento limpos!');
-}
-
-function limparSmartResultado() {
-    document.getElementById('smartResultado').classList.add('hidden');
-    document.getElementById('smartJogos').innerHTML = '';
-    document.getElementById('smartResumo').innerHTML = '';
-    toast('🗑️ Jogos do fechamento inteligente limpos!');
-}
-
-function limparFechResultado() {
-    document.getElementById('fechResultado').classList.add('hidden');
-    document.getElementById('fechJogos').innerHTML = '';
-    document.getElementById('fechResumo').innerHTML = '';
-    toast('🗑️ Jogos do fechamento limpos!');
-}
+function clearGen() { DATA.gen = []; showGen(); }
 
 // GERAÇÃO POSICIONAL AVANÇADA
 function calcPosFrequencias(range) {
@@ -5003,7 +4959,6 @@ function clearPosGen() {
     DATA.genPos = []; 
     document.getElementById('posGenInfo').innerHTML = '';
     showPosGen(); 
-    toast('🗑️ Jogos posicionais limpos!');
 }
 
 function exportPosGenExcel() { 
@@ -5443,7 +5398,7 @@ function executarAnaliseHistorica(todosResultados, resultadoDiv) {
             
             html += '<div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:0.5rem;">';
             if (por14 > 0) html += '<span style="background:#10b981;color:white;padding:0.25rem 0.5rem;border-radius:4px;font-size:0.7rem;font-weight:600;">' + por14 + ' jogos → 14 pts</span>';
-            if (por13 > 0) ht:60+= '<span style="background:#6366f1;color:white;padding:0.25rem 0.5rem;border-radius:4px;font-size:0.7rem;font-weight:600;">' + por13 + ' jogos → 13 pts</span>';
+            if (por13 > 0) html += '<span style="background:#6366f1;color:white;padding:0.25rem 0.5rem;border-radius:4px;font-size:0.7rem;font-weight:600;">' + por13 + ' jogos → 13 pts</span>';
             if (por12 > 0) html += '<span style="background:#8b5cf6;color:white;padding:0.25rem 0.5rem;border-radius:4px;font-size:0.7rem;font-weight:600;">' + por12 + ' jogos → 12 pts</span>';
             if (por11 > 0) html += '<span style="background:#f59e0b;color:white;padding:0.25rem 0.5rem;border-radius:4px;font-size:0.7rem;font-weight:600;">' + por11 + ' jogos → 11 pts</span>';
             html += '</div>';
